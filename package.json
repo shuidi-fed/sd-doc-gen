@@ -1,0 +1,12 @@
+{
+  "name": "sd-doc-gen",
+  "version": "0.0.1",
+  "description": "doc generator",
+  "main": "index.js",
+  "author": "汤睿甲 <tangruijia@shuidihuzhu.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vuese/markdown-render": "^2.0.3",
+    "@vuese/parser": "^2.0.2"
+  }
+}

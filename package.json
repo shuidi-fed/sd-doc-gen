@@ -1,6 +1,6 @@
 {
   "name": "sd-doc-gen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "doc generator",
   "main": "index.js",
   "author": "汤睿甲 <tangruijia@shuidihuzhu.com>",

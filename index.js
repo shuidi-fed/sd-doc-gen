@@ -4,8 +4,6 @@ const Render = require('@vuese/markdown-render').default
 const fs = require('fs')
 const path = require('path')
 
-console.log(parser,Render);
-
 // 执行文件夹名
 const src = 'src'
 
@@ -23,6 +21,8 @@ const docTree = []
 
 
 function main(root) {
+  // 读取项目的package.json
+  const packageJson = require(`${root}/package.json`)
   // 初始src地址
   const srcPath = path.join(root, src)
   // 初始doc地址
@@ -146,7 +146,7 @@ function main(root) {
   // 拼接config.js
   const CONFIGJS = `
   module.exports = {
-    title: 'sea',
+    title: '${packageJson.name}',
     themeConfig: {
       sidebar: ${JSON.stringify(docTree)}
     }
